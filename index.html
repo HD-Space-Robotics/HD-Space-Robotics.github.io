@@ -155,16 +155,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp; Imitation learning (IL) with human demonstrations is a promising method for robotic manipulation tasks. 
-              While minimal demonstrations enable robotic action execution, achieving high success rates and generalization requires high cost, 
-              e.g., continuously adding data or incrementally conducting human-in-loop processes with complex hardware/software systems. 
-              In this paper, we rethink the state/action space of the data collection pipeline as well as the underlying factors responsible for the prediction of non-robust actions. 
-              To this end, we introduce a Hierarchical Data Collection Space (HD-Space) for robotic imitation learning, a simple data collection scheme, 
-              endowing the model to train with proactive and high-quality data. 
-              Specifically, We segment the fine manipulation task into multiple key atomic tasks from a high-level perspective and design atomic state/action spaces for human demonstrations, aiming to generate robust IL data. 
-              We conduct empirical evaluations across two simulated and five real-world long-horizon manipulation tasks and demonstrate that IL policy training with HD-Space-based data can achieve significantly enhanced policy performance. 
-              HD-Space allows the use of a small amount of demonstration data to train a more powerful policy, particularly for long-horizon manipulation tasks. 
-              We aim for HD-Space to offer insights into optimizing data quality and guiding data scaling.
+              &nbsp;&nbsp;&nbsp;&nbsp; Imitation learning (IL) with human demonstrations is a promising method for robotic manipulation tasks. While minimal demonstrations enable robotic action execution, achieving high success rates and generalization requires high cost, e.g., continuously adding data or incrementally conducting human-in-loop processes with complex hardware/software systems. In this paper, we rethink the state/action space of the data collection pipeline as well as the underlying factors responsible for the prediction of non-robust actions. To this end, we introduce a Hierarchical Data Collection Space (HD-Space) for robotic imitation learning, a simple data collection scheme, endowing the model to train with proactive and high-quality data. Specifically, We segment the fine manipulation task into multiple key atomic tasks from a high-level perspective and design atomic state/action spaces for human demonstrations, aiming to generate robust IL data. We conduct empirical evaluations across two simulated and five real-world long-horizon manipulation tasks and demonstrate that IL policy training with HD-Space-based data can achieve significantly enhanced policy performance. HD-Space allows the use of a small amount of demonstration data to train a more powerful policy, particularly for long-horizon manipulation tasks. We aim for HD-Space to offer insights into optimizing data quality and guiding data scaling.
             </p>
           </div>
         </div>
@@ -185,11 +176,7 @@
             <img src="./static/images/overall.png" alt="pipeline" width="100%">
           </div>
           <p>
-              &nbsp;&nbsp;&nbsp;&nbsp; Conceptual comparison of human demonstration data spaces for imitation learning. 
-              For simplification, we use a 2D manipulation state/action space for elaboration. 
-             (a) The naive data collection method records the entire manipulation trajectory, recording a single distribution of trajectories in the second to fourth stages. Therefore, the model is prone to incorrectly predicted trajectories in the subtasks of stages 2 to 4.
-             (b) The HIL data collection method first deploys a baseline model for inference and then cooperates with the hardware system to correct the incorrect trajectories. The theoretical data collection space is the dynamic space where the model is prone to incorrect trajectories. Although the data collection becomes smaller, it still requires a complex hardware system and extra time to wait for the triggering of incorrect trajectories.
-             (c) Our proposed HD-Space segments overall data collection space into multiple overlapped atomic spaces and then collects the manipulation data in each atomic space uniformly. It not only reduces the data collection space but also can efficiently traverse the data that are prone to errors in predicting trajectories after the subtasks of the first stage. Moreover, HD-Space can also provide a better baseline model for HIL.
+              &nbsp;&nbsp;&nbsp;&nbsp; Conceptual comparison of human demonstration data spaces for imitation learning. For simplification, we use a 2D manipulation state/action space for elaboration. (a) The naive data collection method records the entire manipulation trajectory, recording a single distribution of trajectories in the second to fourth stages. Therefore, the model is prone to incorrectly predicted trajectories in the subtasks of stages 2 to 4. (b) The HIL data collection method first deploys a baseline model for inference and then cooperates with the hardware system to correct the incorrect trajectories. The theoretical data collection space is the dynamic space where the model is prone to incorrect trajectories. Although the data collection becomes smaller, it still requires a complex hardware system and extra time to wait for the triggering of incorrect trajectories. (c) Our proposed HD-Space segments overall data collection space into multiple overlapped atomic spaces and then collects the manipulation data in each atomic space uniformly. It not only reduces the data collection space but also can efficiently traverse the data that are prone to errors in predicting trajectories after the subtasks of the first stage. Moreover, HD-Space can also provide a better baseline model for HIL.
           </p>
           <div class="content has-text-justified">
             <p>
@@ -242,8 +229,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing the Teacup into the Box</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm opens the box first, then picks up the tea cup and puts it into the box, and finally closes the box.
-            To save time, we mainly present few different locations of tea cup and box for grabbing the teacup into the box.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm opens the box first, then picks up the tea cup and puts it into the box, and finally closes the box. To save time, we mainly present few different locations of tea cup and box for grabbing the teacup into the box.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
@@ -266,8 +252,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing all Electronic Pen Placed Randomly</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm picks up all the electronic pens on the table that are randomly squared and then places them in the storage.
-            To save time, we mainly present few different locations of electronic pens for grabbing all electronic pen placed randomly.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm picks up all the electronic pens on the table that are randomly squared and then places them in the storage. To save time, we mainly present few different locations of electronic pens for grabbing all electronic pen placed randomly.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
@@ -290,8 +275,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing the Bowls on Mobile Conveyor Belt</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs bowls that appear on the conveyor belt (8cm/s) at any time.
-            To save time, we mainly present few different locations of bowls for grabbing the bowls on mobile conveyor belt.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs bowls that appear on the conveyor belt (8cm/s) at any time. To save time, we mainly present few different locations of bowls for grabbing the bowls on mobile conveyor belt.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
@@ -315,8 +299,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing the Bowls on Fast Mobile Conveyor Belt</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs bowls that appear on the conveyor belt (16cm/s) at any time.
-            To save time, we mainly present few different locations of bowls for grabbing the bowls on fast mobile conveyor belt.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs bowls that appear on the conveyor belt (16cm/s) at any time. To save time, we mainly present few different locations of bowls for grabbing the bowls on fast mobile conveyor belt.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
@@ -340,8 +323,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing the Spoons inside Bowls on Mobile Conveyor Belt</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs spoons inside bowls that appear on the conveyor belt (8cm/s) at any time.
-            To save time, we mainly present few different locations of spoons and bowls for grabbing the spoons inside bowls on mobile conveyor belt.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs spoons inside bowls that appear on the conveyor belt (8cm/s) at any time. To save time, we mainly present few different locations of spoons and bowls for grabbing the spoons inside bowls on mobile conveyor belt.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
@@ -365,8 +347,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3" style="text-align: center;">Video Demo of Grabbing the Spoons inside Bowls on Fast Mobile Conveyor Belt</h2>
           <div class="center-text">
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs spoons inside bowls that appear on the conveyor belt (16cm/s) at any time.
-            To save time, we mainly present few different locations of spoons and bowls for grabbing the spoons inside bowls on fast mobile conveyor belt.
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how robotic arm grabs spoons inside bowls that appear on the conveyor belt (16cm/s) at any time. To save time, we mainly present few different locations of spoons and bowls for grabbing the spoons inside bowls on fast mobile conveyor belt.
           </div>
           <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
             <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
