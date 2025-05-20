@@ -195,17 +195,17 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3" style="text-align: center;">HD-Space</h2>
           <div class="content has-text-justified">
-            <p>
+          </div>
+          <div class="image-area">
+            <img src="./static/images/overall.png" alt="pipeline" width="100%">
+          </div>
+          <p>
               &nbsp;&nbsp;&nbsp;&nbsp; Conceptual comparison of human demonstration data spaces for imitation learning. 
               For simplification, we use a 2D manipulation state/action space for elaboration. 
              (a) The naive data collection method records the entire manipulation trajectory, recording a single distribution of trajectories in the second to fourth stages. Therefore, the model is prone to incorrectly predicted trajectories in the subtasks of stages 2 to 4.
              (b) The HIL data collection method first deploys a baseline model for inference and then cooperates with the hardware system to correct the incorrect trajectories. The theoretical data collection space is the dynamic space where the model is prone to incorrect trajectories. Although the data collection becomes smaller, it still requires a complex hardware system and extra time to wait for the triggering of incorrect trajectories.
              (c) Our proposed HD-Space segments overall data collection space into multiple overlapped atomic spaces and then collects the manipulation data in each atomic space uniformly. It not only reduces the data collection space but also can efficiently traverse the data that are prone to errors in predicting trajectories after the subtasks of the first stage. Moreover, HD-Space can also provide a better baseline model for HIL.
-            </p>
-          </div>
-          <div class="image-area">
-            <img src="./static/images/overall.png" alt="pipeline" width="100%">
-          </div>
+          </p>
           <div class="content has-text-justified">
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp; Practice and comparison of naive and HD-Space data collection methods in the ``put the teacup into the box'' task. It first segments the task into multiple atomic subtasks and designs corresponding atomic state/action spaces for exploring a more robust data collection process.
@@ -215,12 +215,34 @@
             <img src="./static/images/example.png" alt="pipeline" width="100%">
           </div>
           <div class="content has-text-justified">
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp; Robust space considerations. Blue and purple dotted lines represent the trajectories covered by naive and HD-Space data collection processes. Orange lines represent prediction actions.
-            </p>
           </div>
           <div class="image-area">
             <img src="./static/images/consideration.png" alt="pipeline" width="100%">
+          </div>
+          <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; Robust space considerations. Blue and purple dotted lines represent the trajectories covered by naive and HD-Space data collection processes. Orange lines represent prediction actions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div style="background-color: white;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Results</h2>
+          <div class="content has-text-justified">
+          </div>
+          <div class="image-area">
+            <img src="./static/images/SR" alt="pipeline" width="100%">
+          </div>
+          <div class="content has-text-justified">
+          </div>
+          <div class="image-area">
+            <img src="./static/images/long_sequence.jpg" alt="pipeline" width="100%">
           </div>
         </div>
       </div>
